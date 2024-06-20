@@ -26,7 +26,7 @@ pipeline {
             echo 'runs always'
         }
 
-        sucess {
+        success {
             echo 'Runs only when sucess'
         }
 
