@@ -23,15 +23,15 @@ pipeline {
 
     post {
         always {
-            echo "runs always"
+            echo 'runs always'
         }
 
         sucess {
-            echo "Runs only when sucess"
+            echo 'Runs only when sucess'
         }
 
         failure {
-            echo "Runs when failed"
+            echo 'Runs when failed'
         }
     }
 }
