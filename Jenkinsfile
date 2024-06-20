@@ -24,6 +24,7 @@ pipeline {
     post {
         always {
             echo 'runs always'
+            sh 'pwd'
         }
 
         success {
