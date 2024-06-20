@@ -20,4 +20,18 @@ pipeline {
             }
         }
     }
+
+    post {
+        always {
+            echo "runs always"
+        }
+
+        sucess {
+            echo "Runs only when sucess"
+        }
+
+        failure {
+            echo "Runs when failed"
+        }
+    }
 }
