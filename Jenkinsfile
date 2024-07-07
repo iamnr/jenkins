@@ -26,7 +26,7 @@ pipeline {
         always {
             echo 'I will run always'
         }
-        sucess {
+        success {
             echo 'runs only when job is sucess'
         }
         failure {
