@@ -8,7 +8,7 @@ pipeline {
     options {
         ansiColor('xterm')
     }
-    
+
     stages {
         stage('Build') {
             steps {
@@ -23,6 +23,12 @@ pipeline {
         stage('test') {
             steps {
                 echo 'testing'
+            }
+        }
+
+        stage('approve') {
+            steps {
+                input "Shall I proceed?"
             }
         }
         stage('deploy') {
