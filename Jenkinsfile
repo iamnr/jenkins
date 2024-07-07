@@ -26,5 +26,11 @@ pipeline {
         always {
             echo 'I will run always'
         }
+        sucess {
+            echo 'runs only when job is sucess'
+        }
+        failure {
+            echo 'runs only when job failed'
+        }
     }
 }
