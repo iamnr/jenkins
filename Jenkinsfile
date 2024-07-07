@@ -17,7 +17,8 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                echo 'deploy' .
+                echo 'deploy'
+                error ''
             }
         }
     }
