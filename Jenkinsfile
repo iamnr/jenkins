@@ -7,7 +7,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Hello from git and building'
+                echo 'building'
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'testing'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'deploy'
             }
         }
     }
