@@ -8,6 +8,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'building'
+                sh '''
+                    ls -ltr 
+                    pwd
+                '''
             }
         }
         stage('test') {
