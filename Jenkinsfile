@@ -10,7 +10,6 @@ pipeline {
                 echo 'building'
                 sh '''
                     ls -ltr 
-                    pwd
                 '''
             }
         }
