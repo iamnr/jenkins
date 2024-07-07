@@ -11,6 +11,7 @@ pipeline {
                 sh '''
                     ls -ltr 
                     pwd
+                    echo 'hi'
                 '''
             }
         }
